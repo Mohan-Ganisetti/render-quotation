@@ -1,5 +1,5 @@
-# Use JDK 21 for Spring Boot
-FROM eclipse-temurin:21-jdk
+# Use JDK 17 for Spring Boot
+FROM eclipse-temurin:17-jdk
 
 # Set working directory
 WORKDIR /app
@@ -13,5 +13,5 @@ RUN chmod +x mvnw && ./mvnw clean package -DskipTests
 # Expose port 8080
 EXPOSE 8080
 
-# Run the WAR (Spring Boot embedded Tomcat supports WAR too)
+# Run the WAR
 CMD ["java", "-jar", "target/QuotationGenerator-0.0.1-SNAPSHOT.war"]
