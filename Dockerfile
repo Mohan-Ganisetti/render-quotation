@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy Maven wrapper and project files
 COPY . .
 
-# Build the application
-RUN ./mvnw clean package -DskipTests
+# Ensure mvnw is executable and build the app
+RUN chmod +x mvnw && ./mvnw clean package -DskipTests
 
 # Expose port 8080
 EXPOSE 8080
