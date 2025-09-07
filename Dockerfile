@@ -23,4 +23,4 @@ COPY --from=builder /app/target/QuotationGenerator-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app.jar", "--server.port=$PORT"]
+ENTRYPOINT ["sh", "-c", "java -jar app.jar --server.port=$PORT"]
