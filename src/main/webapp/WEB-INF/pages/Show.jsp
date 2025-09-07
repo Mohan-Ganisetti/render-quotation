@@ -28,9 +28,8 @@
                         <td>${entry.key}</td>
                         <td>${item}</td>
                         <td>
-                            <a href="${pageContext.request.contextPath}/delete?type=${entry.key}&item=${item}">
-                                Delete</a>
-                            
+                            <a href="${pageContext.request.contextPath}/delete?type=${entry.key}&item=${item}"> Delete</a>
+                                                    
                         </td>
                     </tr>
                 </c:forEach>
