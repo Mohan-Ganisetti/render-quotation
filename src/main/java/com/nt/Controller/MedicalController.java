@@ -39,6 +39,11 @@ public class MedicalController {
 	    return "welcome"; // JSP or HTML file name (without extension)
 	}
 
+	@GetMapping("/thymeleafWelcome")
+	public String thymeleafWelcome() {
+	    return "welcome"; // Will use welcome.html in templates
+	}
+	
 	@PostMapping("/save") // lowercase everywhere
 	public String save(@RequestParam String keyData,
 	                   @RequestParam String valueList,
@@ -527,3 +532,4 @@ public String Colletdata(
 
 }
 	
+
