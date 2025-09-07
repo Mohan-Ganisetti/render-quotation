@@ -36,7 +36,7 @@ public class MedicalController {
 	public String openForm() {
 		System.out.println("Form page Is Opend");
 		
-	    return "MapdataForm"; // JSP or HTML file name (without extension)
+	    return "welcome"; // JSP or HTML file name (without extension)
 	}
 
 	@PostMapping("/save") // lowercase everywhere
