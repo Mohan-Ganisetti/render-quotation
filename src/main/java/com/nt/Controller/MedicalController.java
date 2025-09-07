@@ -43,7 +43,11 @@ public class MedicalController {
 	public String thymeleafWelcome() {
 	    return "welcome"; // Will use welcome.html in templates
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> f019855 (Add Thymeleaf welcome page)
 	@PostMapping("/save") // lowercase everywhere
 	public String save(@RequestParam String keyData,
 	                   @RequestParam String valueList,
