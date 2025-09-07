@@ -36,12 +36,12 @@ public class MedicalController {
 	public String openForm() {
 		System.out.println("Form page Is Opend");
 		
-	    return "MapdataForm"; // JSP or HTML file name (without extension)
+	    return "MapdataFrom"; // JSP or HTML file name (without extension)
 	}
 
 	@GetMapping("/thymeleafWelcome")
 	public String thymeleafWelcome() {
-	    return "MapdataForm"; // Will use welcome.html in templates
+	    return "MapdataFrom"; // Will use welcome.html in templates
 	}
 
 	@PostMapping("/save") // lowercase everywhere
@@ -532,6 +532,7 @@ public String Colletdata(
 
 }
 	
+
 
 
 
